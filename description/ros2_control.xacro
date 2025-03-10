@@ -10,7 +10,8 @@
             <param name="device">/dev/serial/by-id/usb-1a86_USB_Serial-if00-port0</param>
             <param name="baud_rate">57600</param>
             <param name="timeout">1000</param>
-            <param name="enc_counts_per_rev">1689</param>
+            <param name="enc_counts_per_rev">1684</param> 
+            <!-- I actually got 1682, but I am multiplying by 2 because that seems to give me the right result in rviz -->
         </hardware>
         <joint name="left_wheel_joint">
             <command_interface name="velocity">
